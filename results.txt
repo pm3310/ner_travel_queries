@@ -1,0 +1,197 @@
+### Classification Report ###
+                              precision    recall  f1-score   support
+
+                           O       0.99      1.00      0.99     27675
+             B-aircraft_code       1.00      0.64      0.78       165
+              B-airline_code       0.97      0.85      0.91       170
+              B-airline_name       1.00      0.98      0.99       505
+              I-airline_name       1.00      0.97      0.98       325
+              B-airport_code       0.44      0.44      0.44        45
+              B-airport_name       0.38      0.14      0.21       105
+              I-airport_name       0.71      0.17      0.28       145
+ B-arrive_date.date_relative       0.50      0.50      0.50        10
+      B-arrive_date.day_name       0.25      0.18      0.21        55
+    B-arrive_date.day_number       0.00      0.00      0.00        30
+    I-arrive_date.day_number       0.00      0.00      0.00         0
+    B-arrive_date.month_name       0.00      0.00      0.00        30
+B-arrive_date.today_relative       0.00      0.00      0.00         0
+      B-arrive_time.end_time       0.00      0.00      0.00        40
+      I-arrive_time.end_time       0.00      0.00      0.00        40
+    B-arrive_time.period_mod       0.00      0.00      0.00         0
+ B-arrive_time.period_of_day       0.00      0.00      0.00        30
+ I-arrive_time.period_of_day       0.00      0.00      0.00         0
+    B-arrive_time.start_time       0.75      0.75      0.75        40
+    I-arrive_time.start_time       0.00      0.00      0.00         5
+          B-arrive_time.time       0.73      0.79      0.76       170
+          I-arrive_time.time       0.80      0.80      0.80       175
+ B-arrive_time.time_relative       0.79      0.84      0.81       155
+ I-arrive_time.time_relative       1.00      1.00      1.00        20
+             B-booking_class       0.00      0.00      0.00         5
+                 B-city_name       0.54      0.33      0.41       285
+                 I-city_name       0.73      0.27      0.39       150
+                B-class_type       0.96      1.00      0.98       120
+                I-class_type       1.00      1.00      1.00        85
+               B-compartment       0.00      0.00      0.00         5
+                   B-connect       1.00      1.00      1.00        30
+             B-cost_relative       1.00      0.97      0.99       185
+             I-cost_relative       1.00      0.67      0.80        15
+                  B-day_name       0.00      0.00      0.00        10
+                B-day_number       0.00      0.00      0.00         0
+                 B-days_code       0.00      0.00      0.00         5
+ B-depart_date.date_relative       0.94      1.00      0.97        85
+      B-depart_date.day_name       0.94      0.96      0.95      1060
+    B-depart_date.day_number       0.90      0.98      0.94       275
+    I-depart_date.day_number       1.00      1.00      1.00        75
+    B-depart_date.month_name       0.90      0.96      0.93       280
+B-depart_date.today_relative       1.00      1.00      1.00        45
+I-depart_date.today_relative       0.00      0.00      0.00         0
+          B-depart_date.year       1.00      1.00      1.00        15
+      B-depart_time.end_time       0.22      0.67      0.33        15
+      I-depart_time.end_time       0.22      0.67      0.33        15
+    B-depart_time.period_mod       0.62      1.00      0.77        25
+ B-depart_time.period_of_day       0.93      0.91      0.92       650
+ I-depart_time.period_of_day       1.00      1.00      1.00         5
+    B-depart_time.start_time       0.50      0.33      0.40        15
+    I-depart_time.start_time       0.50      1.00      0.67         5
+          B-depart_time.time       0.78      0.89      0.84       285
+          I-depart_time.time       0.85      0.88      0.87       260
+ B-depart_time.time_relative       0.90      0.86      0.88       325
+ I-depart_time.time_relative       0.00      0.00      0.00         5
+                   B-economy       1.00      1.00      1.00        30
+                   I-economy       0.00      0.00      0.00         0
+               B-fare_amount       1.00      1.00      1.00        10
+               I-fare_amount       1.00      1.00      1.00        10
+           B-fare_basis_code       0.89      1.00      0.94        85
+           I-fare_basis_code       0.00      0.00      0.00         0
+                    B-flight       0.00      0.00      0.00         5
+               B-flight_days       1.00      1.00      1.00        50
+                B-flight_mod       1.00      1.00      1.00       120
+                I-flight_mod       1.00      0.17      0.29        30
+             B-flight_number       0.79      1.00      0.88        55
+             I-flight_number       0.00      0.00      0.00         5
+               B-flight_stop       1.00      1.00      1.00       105
+               I-flight_stop       0.00      0.00      0.00         0
+               B-flight_time       1.00      1.00      1.00         5
+               I-flight_time       1.00      1.00      1.00         5
+      B-fromloc.airport_code       0.62      1.00      0.77        25
+      B-fromloc.airport_name       0.39      0.92      0.55        60
+      I-fromloc.airport_name       0.37      0.93      0.53        75
+         B-fromloc.city_name       0.99      1.00      0.99      3520
+         I-fromloc.city_name       0.98      1.00      0.99       885
+        B-fromloc.state_code       1.00      1.00      1.00       115
+        B-fromloc.state_name       1.00      0.94      0.97        85
+        I-fromloc.state_name       1.00      1.00      1.00         5
+                      B-meal       0.94      0.94      0.94        80
+                 B-meal_code       0.00      0.00      0.00         5
+                 I-meal_code       0.00      0.00      0.00         0
+          B-meal_description       1.00      0.80      0.89        50
+          I-meal_description       0.00      0.00      0.00         0
+                       B-mod       0.50      0.50      0.50        10
+                B-month_name       0.00      0.00      0.00         0
+                        B-or       0.50      1.00      0.67        15
+             B-period_of_day       0.00      0.00      0.00        20
+          B-restriction_code       1.00      1.00      1.00        20
+          I-restriction_code       1.00      1.00      1.00        15
+ B-return_date.date_relative       0.50      0.33      0.40        15
+ I-return_date.date_relative       0.00      0.00      0.00        15
+      B-return_date.day_name       0.00      0.00      0.00        10
+    B-return_date.day_number       0.00      0.00      0.00         0
+    I-return_date.day_number       0.00      0.00      0.00         0
+    B-return_date.month_name       0.00      0.00      0.00         0
+B-return_date.today_relative       0.00      0.00      0.00         0
+I-return_date.today_relative       0.00      0.00      0.00         0
+    B-return_time.period_mod       0.00      0.00      0.00         0
+ B-return_time.period_of_day       0.00      0.00      0.00         0
+                B-round_trip       1.00      0.97      0.99       365
+                I-round_trip       1.00      1.00      1.00       355
+                B-state_code       0.50      1.00      0.67         5
+                B-state_name       0.00      0.00      0.00        45
+                I-state_name       0.00      0.00      0.00         5
+      B-stoploc.airport_code       0.00      0.00      0.00         5
+      B-stoploc.airport_name       0.00      0.00      0.00         0
+         B-stoploc.city_name       0.42      0.50      0.45       100
+         I-stoploc.city_name       0.55      0.60      0.57        50
+        B-stoploc.state_code       0.00      0.00      0.00         0
+                      B-time       0.00      0.00      0.00         0
+                      I-time       0.00      0.00      0.00         0
+             B-time_relative       0.00      0.00      0.00         0
+            B-today_relative       0.00      0.00      0.00         0
+            I-today_relative       0.00      0.00      0.00         0
+        B-toloc.airport_code       1.00      0.50      0.67        20
+        B-toloc.airport_name       0.50      0.67      0.57        15
+        I-toloc.airport_name       0.40      0.67      0.50        15
+           B-toloc.city_name       0.96      0.98      0.97      3580
+           I-toloc.city_name       0.93      0.99      0.96      1325
+        B-toloc.country_name       0.00      0.00      0.00         5
+          B-toloc.state_code       1.00      0.94      0.97        90
+          B-toloc.state_name       0.89      0.86      0.87       140
+          I-toloc.state_name       1.00      1.00      1.00         5
+            B-transport_type       1.00      1.00      1.00        50
+            I-transport_type       0.00      0.00      0.00         5
+
+                 avg / total       0.96      0.96      0.96     45990
+
+
+### Sequence Accuracy Score ###
+0.7928331466965286
+
+### Weighted Precision Score ###
+0.958208628893
+
+### Weighted Recall Score ###
+0.96260056534
+
+
+best params: {'c2': 0.014231089980391701, 'c1': 0.11028582532658132}
+
+best CV score: 0.973620760186
+
+model size: 0.77M
+
+Trained model just persisted!
+
+Top likely transitions:
+
+B-round_trip -> I-round_trip 7.799999
+I-depart_time.time_relative -> I-depart_time.time_relative 7.509792
+B-time -> I-time  7.315407
+B-fromloc.state_name -> I-fromloc.state_name 7.306523
+B-depart_time.end_time -> I-depart_time.end_time 7.192768
+B-meal_code -> I-meal_code 7.158129
+B-return_date.month_name -> B-return_date.day_number 6.631612
+B-arrive_time.end_time -> I-arrive_time.end_time 6.567180
+I-city_name -> I-city_name 6.388137
+I-arrive_time.time -> B-arrive_date.today_relative 6.364187
+B-today_relative -> I-today_relative 6.301531
+B-day_name -> B-month_name 6.223449
+I-return_date.date_relative -> I-return_date.date_relative 6.140529
+B-period_of_day -> B-time_relative 6.140484
+B-arrive_time.start_time -> I-arrive_time.start_time 6.136909
+B-depart_time.start_time -> I-depart_time.start_time 6.113552
+B-return_time.period_mod -> B-return_time.period_of_day 5.906448
+B-arrive_date.date_relative -> B-arrive_date.day_name 5.811556
+B-airport_name -> I-airport_name 5.776324
+I-flight_stop -> I-flight_stop 5.757151
+
+Top unlikely transitions:
+
+I-arrive_time.time -> B-depart_date.day_name -4.773596
+B-toloc.city_name -> I-fromloc.city_name -4.805308
+O      -> I-fromloc.airport_name -4.885348
+B-arrive_date.day_name -> B-depart_date.month_name -4.919119
+B-depart_time.time -> I-arrive_time.time -5.022496
+B-depart_time.time_relative -> B-arrive_time.time -5.030406
+O      -> I-return_date.date_relative -5.052169
+O      -> I-today_relative -5.137598
+B-arrive_date.day_name -> B-depart_time.period_of_day -5.160651
+O      -> I-return_date.today_relative -5.200234
+B-arrive_time.time -> I-depart_time.time -5.367059
+B-arrive_time.time_relative -> B-depart_time.time -5.441737
+O      -> I-city_name -5.501266
+O      -> I-arrive_time.time -5.834354
+O      -> I-depart_time.time -6.073965
+O      -> I-airline_name -6.088305
+O      -> I-toloc.city_name -6.559497
+O      -> I-depart_date.today_relative -6.918196
+O      -> I-flight_mod -6.997473
+O      -> I-flight_time -9.456873
