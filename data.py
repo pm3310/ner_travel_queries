@@ -78,3 +78,29 @@ def get_data():
         test_data.extend(fold_test_data)
 
     return train_data, validation_data, test_data
+
+
+def get_raw_data():
+    all_train_set = [[], [], []]
+    all_valid_set = [[], [], []]
+    all_test_set = [[], [], []]
+    all_dicts = {'labels2idx': {}, 'tables2idx': {}, 'words2idx': {}}
+    for i in range(5):
+        train_set, valid_set, test_set, dicts = _load_data(i)
+        all_train_set[0].extend(train_set[0])
+        all_train_set[1].extend(train_set[1])
+        all_train_set[2].extend(train_set[2])
+
+        all_valid_set[0].extend(valid_set[0])
+        all_valid_set[1].extend(valid_set[1])
+        all_valid_set[2].extend(valid_set[2])
+
+        all_test_set[0].extend(test_set[0])
+        all_test_set[1].extend(test_set[1])
+        all_test_set[2].extend(test_set[2])
+
+        all_dicts['labels2idx'].update(dicts['labels2idx'])
+        all_dicts['tables2idx'].update(dicts['tables2idx'])
+        all_dicts['words2idx'].update(dicts['words2idx'])
+
+    return all_train_set, all_valid_set, all_test_set, all_dicts
