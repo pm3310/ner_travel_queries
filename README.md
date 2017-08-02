@@ -50,7 +50,7 @@ Download ATIS Dataset here! [split 0](https://s3-eu-west-1.amazonaws.com/atis/at
 - `Weighted Precision Score = 0.972639507033`
 - `Weighted Recall Score = 0.97347249402`
 - `Sequence Accuracy Score = 0.8286674132138858`
-- `crf_results.txt` has thorough details about the performance of CRF in this task
+- `lstm_results.txt` has thorough details about the performance of LSTM in this task
 
 
 # Future Work
