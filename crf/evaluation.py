@@ -1,20 +1,10 @@
 import pickle
 
 from sklearn_crfsuite import metrics
-from sklearn_crfsuite.metrics import _flattens_y
 
 from crf.training import sent2features, sent2labels
 from data import get_data
-
-
-@_flattens_y
-def flat_recall_score(y_true, y_pred, **kwargs):
-    """
-    Return precision score for sequence items.
-    """
-    from sklearn import metrics
-    return metrics.recall_score(y_true, y_pred, **kwargs)
-
+from evaluation import flat_recall_score
 
 if __name__ == '__main__':
     print(

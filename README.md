@@ -1,6 +1,11 @@
 # NER Travel Queries
-This is an implementation using (linear chain) conditional random fields (CRF) in python 3.5 for named entity recognition (NER). It uses the [python-crfsuite](http://python-crfsuite.readthedocs.org/en/latest/) library as its basis. 
-It solves the Airline Travel Information System(ATIS) dataset.
+This includes two different implementations to solve the Airline Travel Information System(ATIS) Named-Entity-Recognition (NER) challenge.
+
+One implementation uses (linear chain) conditional random fields (CRF), and, more specifically, the [python-crfsuite](http://python-crfsuite.readthedocs.org/en/latest/) library as its basis. 
+
+The other implementation uses a single-layer LSTM leveraging Keras and Tensorflow.
+
+The LSTM approach resulted in better performance in terms of precision and recall.
 
 Here is an example sentence and its labels from the dataset:
 
@@ -18,19 +23,36 @@ Download ATIS Dataset here! [split 0](https://s3-eu-west-1.amazonaws.com/atis/at
 -  pip install -r requirements.txt
 -  Execute `python download_data.py`
 -  Execute `python -m spacy download en`
+-  Specify tensorflow as a backend of Keras in file `~/.keras/keras.json` 
 
 # Code
 
-- The python file `training.py` performs Random Grid search (optimizing F1 score) to find the best possible values for parameters `c1` and `c2` of CRF. It saves the model in a file named `best_crf_model.pkl`. If you run it again, it will overwrite the `best_crf_model.pkl` file. It takes ~7 hours in ` MacBook i7 16GB.
-- The python file `evaluation.py` evaluates the latter model in terms of Precision, Recall and Sequence Accuracy Score.
+## CRF
+
+- The python file `crf.training.py` performs Random Grid search (optimizing F1 score) to find the best possible values for parameters `c1` and `c2` of CRF. It saves the model in a file named `best_crf_model.pkl`. If you run it again, it will overwrite the `best_crf_model.pkl` file. It takes ~7 hours in ` MacBook Pro i7 16GB.
+- The python file `crf.evaluation.py` evaluates the latter model in terms of Precision, Recall and Sequence Accuracy Score.
  
+## LSTM (Long short-term memory neural network) 
+
+- The python file `lstm.training.py` trains/evaluates a single-layer LSTM network. The weights for each epoch are stored under `lstm/keras_checkpoints/`. It takes a few hours in CPU at most.
+
 # Performance
+
+## CRF
 
 - `Weighted Precision Score = 0.958208628893`
 - `Weighted Recall Score = 0.96260056534`
 - `Sequence Accuracy Score = 0.7928331466965286`
-- `results.txt` has thorough details about the performance of CRF in this task
+- `crf_results.txt` has thorough details about the performance of CRF in this task
+
+## LSTM
+
+- `Weighted Precision Score = 0.972639507033`
+- `Weighted Recall Score = 0.97347249402`
+- `Sequence Accuracy Score = 0.8286674132138858`
+- `crf_results.txt` has thorough details about the performance of CRF in this task
+
 
 # Future Work
 
-Try some form of LSTM Network to avoid feature engineering!
+Try more complicated LSTM architectures and/or use pre-trained word embeddings. 
