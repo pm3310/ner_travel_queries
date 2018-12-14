@@ -9,7 +9,7 @@ The LSTM approach resulted in better performance in terms of precision and recal
 
 Here is an example sentence and its labels from the dataset:
 
-  Show (O) | flights (O) | from (O) | Boston (B-dept) | to (O) | New (B-arr) | York (I-arr) | today (O)
+  Show (O) | flights (O) | from (O) | Boston (B-dept) | to (O) | New (B-arr) | York (I-arr) | today (B-depart_date.today_relative)
 
 
 # ATIS Data
